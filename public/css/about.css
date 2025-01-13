@@ -1,0 +1,419 @@
+<style>
+    .vision-card, .mission-card, .value-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .vision-card:hover, .mission-card:hover, .value-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .impact-card h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+    .impact-card p {
+        color: #666;
+        font-weight: 500;
+    }
+
+    .section-title {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .section-title:after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: var(--primary-color);
+        margin-top: 10px;
+    }
+
+    .text-center .section-title:after {
+        margin: 10px auto 0;
+    }
+
+    .value-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .value-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .value-card i {
+        color: var(--primary-color);
+        transition: transform 0.3s ease;
+    }
+
+    .value-card:hover i {
+        transform: scale(1.2);
+    }
+
+    .value-card h4 {
+        color: var(--primary-color);
+        margin: 1rem 0;
+        font-weight: 600;
+    }
+
+    .value-card p {
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .section-title {
+        position: relative;
+        margin-bottom: 3rem;
+    }
+
+    .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: var(--primary-color);
+    }
+
+    .focus-card {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        height: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+
+    .focus-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .focus-icon {
+        width: 70px;
+        height: 70px;
+        background: var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        transition: all 0.3s ease;
+    }
+
+    .focus-icon i {
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    .focus-card:hover .focus-icon {
+        transform: rotate(360deg);
+        background: var(--secondary-color);
+    }
+
+    .focus-card h4 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .focus-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .focus-card ul li {
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+        color: #666;
+    }
+
+    .focus-card ul li:before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+    }
+
+    .focus-card:hover ul li:before {
+        color: var(--secondary-color);
+    }
+
+    .our-story {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 3rem;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+    }
+
+    .story-content {
+        color: #333;
+    }
+
+    .story-content .lead {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--primary-color);
+    }
+
+    .initiatives-box {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 2rem 0;
+    }
+
+    .initiatives-list {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0 0 0;
+    }
+
+    .initiatives-list li {
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .initiatives-list li i {
+        color: var(--primary-color);
+        margin-right: 0.5rem;
+    }
+
+    .vision-statement {
+        font-style: italic;
+        font-weight: 500;
+        color: var(--primary-color);
+        padding: 1rem;
+        border-left: 4px solid var(--primary-color);
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 0 10px 10px 0;
+    }
+
+    .section-title {
+        color: var(--primary-color);
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: var(--primary-color);
+    }
+
+    @media (max-width: 768px) {
+        .our-story {
+            padding: 1.5rem;
+        }
+        
+        .story-content .lead {
+            font-size: 1.1rem;
+        }
+    }
+
+    .hero-section {
+        position: relative;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+        background-attachment: fixed;
+    }
+
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+        z-index: 1;
+    }
+
+    .hero-section .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-section h1 {
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-section .lead {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+        .hero-section {
+            min-height: 40vh;
+            padding: 60px 0;
+            background-attachment: scroll;
+        }
+        
+        .hero-section h1 {
+            font-size: 2.5rem;
+        }
+        
+        .hero-section .lead {
+            font-size: 1.2rem;
+        }
+    }
+
+    /* Board of Directors Styles */
+    .director-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .director-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .director-image {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+    }
+
+    .director-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .director-social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .director-image:hover .director-social {
+        opacity: 1;
+    }
+
+    .director-social a {
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+    .director-social a:hover {
+        color: var(--primary-color);
+    }
+
+    .director-info {
+        padding: 1.5rem;
+    }
+
+    .director-info h3 {
+        color: var(--primary-color);
+        margin-bottom: 5px;
+    }
+
+    .director-info .position {
+        color: #666;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .director-info .bio {
+        font-size: 0.9rem;
+        color: #777;
+        line-height: 1.6;
+    }
+
+    /* Members Styles */
+    .member-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .member-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .member-image img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .member-info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .member-info h4 {
+        color: var(--primary-color);
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+    }
+
+    .member-info .position {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .member-social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .member-social a {
+        color: #666;
+        transition: color 0.3s ease;
+    }
+
+    .member-social a:hover {
+        color: var(--primary-color);
+    }
+</style>

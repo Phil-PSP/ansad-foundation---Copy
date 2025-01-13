@@ -1,0 +1,206 @@
+<%- include('../partials/header') %>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Make a Donation</h1>
+    <p class="text-center mb-5">Choose your preferred payment method</p>
+
+    <div class="row justify-content-center g-4">
+        <!-- MTN Mobile Money Card -->
+        <div class="col-md-5 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-mobile-alt me-2"></i> MTN Mobile Money
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="text-muted">MTN MoMo Number:</label>
+                        <div class="d-flex align-items-center">
+                            <h5 class="mb-0">0244123456</h5>
+                            <button class="btn btn-sm btn-outline-warning ms-2" 
+                                    onclick="copyToClipboard('0244123456')">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-muted">Account Name:</label>
+                        <h5>ANSAD FOUNDATION GHANA</h5>
+                    </div>
+                    <hr>
+                    <div class="small">
+                        <p class="fw-bold mb-2">How to donate via MTN MoMo:</p>
+                        <ol class="ps-3">
+                            <li>Dial *170#</li>
+                            <li>Select "Transfer Money" (Option 1)</li>
+                            <li>Select "MoMo User"</li>
+                            <li>Enter the number: 0244123456</li>
+                            <li>Enter the amount you wish to donate</li>
+                            <li>Enter your PIN to confirm</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vodafone Cash Card -->
+        <div class="col-md-5 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-mobile-alt me-2"></i> Vodafone Cash
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="text-muted">Vodafone Number:</label>
+                        <div class="d-flex align-items-center">
+                            <h5 class="mb-0">0503123456</h5>
+                            <button class="btn btn-sm btn-outline-danger ms-2" 
+                                    onclick="copyToClipboard('0503123456')">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-muted">Account Name:</label>
+                        <h5>ANSAD FOUNDATION GHANA</h5>
+                    </div>
+                    <hr>
+                    <div class="small">
+                        <p class="fw-bold mb-2">How to donate via Vodafone Cash:</p>
+                        <ol class="ps-3">
+                            <li>Dial *110#</li>
+                            <li>Select "Transfer Money" (Option 1)</li>
+                            <li>Select "To Other Networks"</li>
+                            <li>Enter the number: 0503123456</li>
+                            <li>Enter the amount you wish to donate</li>
+                            <li>Enter your PIN to confirm</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AirtelTigo Money Card -->
+        <div class="col-md-5 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-mobile-alt me-2"></i> AirtelTigo Money
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="text-muted">AirtelTigo Number:</label>
+                        <div class="d-flex align-items-center">
+                            <h5 class="mb-0">0273123456</h5>
+                            <button class="btn btn-sm btn-outline-primary ms-2" 
+                                    onclick="copyToClipboard('0273123456')">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-muted">Account Name:</label>
+                        <h5>ANSAD FOUNDATION GHANA</h5>
+                    </div>
+                    <hr>
+                    <div class="small">
+                        <p class="fw-bold mb-2">How to donate via AirtelTigo Money:</p>
+                        <ol class="ps-3">
+                            <li>Dial *110#</li>
+                            <li>Select "Transfer Money"</li>
+                            <li>Select "Other Networks"</li>
+                            <li>Enter the number: 0273123456</li>
+                            <li>Enter the amount you wish to donate</li>
+                            <li>Enter your PIN to confirm</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bank Transfer Card -->
+        <div class="col-md-5 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-university me-2"></i> Bank Transfer
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="text-muted">Bank Name:</label>
+                        <h5>GCB Bank</h5>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-muted">Account Number:</label>
+                        <div class="d-flex align-items-center">
+                            <h5 class="mb-0">1234567890</h5>
+                            <button class="btn btn-sm btn-outline-success ms-2" 
+                                    onclick="copyToClipboard('1234567890')">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-muted">Account Name:</label>
+                        <h5>ANSAD FOUNDATION GHANA</h5>
+                    </div>
+                    <hr>
+                    <div class="small">
+                        <p class="fw-bold mb-2">How to donate via Bank Transfer:</p>
+                        <ol class="ps-3">
+                            <li>Log in to your bank's mobile app or visit a branch</li>
+                            <li>Select "Transfer" or "Make Payment"</li>
+                            <li>Select "To Other Bank Account"</li>
+                            <li>Enter account number: 1234567890</li>
+                            <li>Enter bank name: GCB Bank</li>
+                            <li>Enter amount and reference "Donation"</li>
+                            <li>Confirm the transfer</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="text-center mt-5">
+        <p class="mb-2">For any donation inquiries, please contact us:</p>
+        <p class="mb-1"><i class="fas fa-phone me-2"></i>+233 244123456</p>
+        <p><i class="fas fa-envelope me-2"></i>donations@ansadfoundation.org</p>
+    </div>
+</div>
+
+<!-- Add clipboard functionality with toast notification -->
+<script>
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        // Create and show toast
+        const toast = document.createElement('div');
+        toast.className = 'position-fixed bottom-0 end-0 p-3';
+        toast.style.zIndex = '11';
+        toast.innerHTML = `
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Success</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Copied to clipboard!
+                </div>
+            </div>
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+</script>
+
+<%- include('../partials/footer') %>

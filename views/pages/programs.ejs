@@ -1,0 +1,334 @@
+<%- include('../partials/header') %>
+<link rel="stylesheet" href="/css/programs.css">
+
+<div class="hero-section text-center" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center; background-size: cover; padding: 100px 0; color: white;">
+    <div class="container">
+        <h1 class="display-4">Our Programs</h1>
+        <p class="lead">Transforming lives through education, empowerment, and sustainable development</p>
+    </div>
+</div>
+
+<div class="container py-5">
+    <!-- Core Programs -->
+    <section class="core-programs">
+        <h2 class="section-title text-center mb-5">Core Programs</h2>
+        <div class="row">
+            <!-- Education Program -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Educational Initiatives</h3>
+                    <p>Supporting education access and quality learning.</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#educationModal">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Healthcare Program -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthcare Initiatives</h3>
+                    <p>Promoting community health and wellbeing.</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#healthcareModal">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Skills Development -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Skills Development</h3>
+                    <p>Empowering through practical skills training.</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#skillsModal">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Tech training -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Tech Training and Support</h3>
+                    <p>Providing individuals with essential technology skills and ongoing support to navigate the digital landscape effectively.</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#skillsModal">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Agriculture -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Agriculture Initiatives</h3>
+                    <p>Promoting sustainable farming practices.</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#agricultureModal">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Mentorship -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Mentorship</h3>
+                    <p>Guiding future leaders through experience.</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mentorshipModal">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Legal Aid -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Legal Aid & Support</h3>
+                    <p>Providing access to legal services.</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#legalModal">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Modals for each program -->
+<!-- Education Modal -->
+<div class="modal fade" id="educationModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Educational Initiatives</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>At ANSAD, we believe education is the cornerstone of community development and personal growth. Our comprehensive educational initiatives are designed to break barriers and create opportunities for all.</p>
+                
+                <h6 class="mt-4 mb-3"><i class="fas fa-star text-primary"></i> Our Key Focus Areas:</h6>
+                <ul class="program-list">
+                    <li><strong>Life Skills Training:</strong> Equipping individuals with essential skills for daily life, including communication, decision-making, and problem-solving abilities.</li>
+                    <li><strong>Community Tutoring:</strong> Providing free tutoring services to students who need additional academic support, ensuring no child is left behind.</li>
+                    <li><strong>Literacy Programs:</strong> Offering basic to advanced literacy courses for all age groups, helping build a more educated and informed community.</li>
+                    <li><strong>STEAM Initiatives:</strong> Introducing Science, Technology, Engineering, Arts, and Mathematics through interactive and practical learning experiences.</li>
+                </ul>
+
+                <h6 class="mt-4 mb-3"><i class="fas fa-bullseye text-primary"></i> Program Impact:</h6>
+                <ul class="program-list">
+                    <li>Increased literacy rates in local communities</li>
+                    <li>Improved academic performance among students</li>
+                    <li>Enhanced career prospects for participants</li>
+                    <li>Stronger community engagement in education</li>
+                </ul>
+
+                <div class="get-involved mt-4 p-3 bg-light rounded">
+                    <h6><i class="fas fa-hands-helping text-primary"></i> How You Can Get Involved:</h6>
+                    <p>Whether you're a student seeking support, a professional wanting to volunteer as a tutor, or someone passionate about education, there's a place for you in our educational initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Healthcare Modal -->
+<div class="modal fade" id="healthcareModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Healthcare Initiatives</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>ANSAD's healthcare initiatives are built on the principle that good health is fundamental to community prosperity. We work to ensure that quality healthcare is accessible to everyone, regardless of their economic status.</p>
+                
+                <h6 class="mt-4 mb-3"><i class="fas fa-star text-primary"></i> Core Healthcare Services:</h6>
+                <ul class="program-list">
+                    <li><strong>Healthcare Education:</strong> Conducting workshops and awareness programs on preventive healthcare, nutrition, and hygiene practices.</li>
+                    <li><strong>Medical Services:</strong> Organizing regular health camps, providing basic medical care, and facilitating access to specialized treatment.</li>
+                    <li><strong>Mental Health Support:</strong> Offering counseling services and mental health awareness programs to promote emotional well-being.</li>
+                    <li><strong>Health Research:</strong> Conducting community health surveys and research to better understand and address local health challenges.</li>
+                    <li><strong>Health Advocacy:</strong> Working with stakeholders to improve healthcare policies and access in underserved areas.</li>
+                    <li><strong>Health Training:</strong> Providing first aid training and basic healthcare skills to community members.</li>
+                </ul>
+
+                <h6 class="mt-4 mb-3"><i class="fas fa-bullseye text-primary"></i> Expected Outcomes:</h6>
+                <ul class="program-list">
+                    <li>Improved community health awareness</li>
+                    <li>Better access to basic healthcare services</li>
+                    <li>Reduced incidence of preventable diseases</li>
+                    <li>Enhanced mental health support systems</li>
+                </ul>
+
+                <div class="get-involved mt-4 p-3 bg-light rounded">
+                    <h6><i class="fas fa-hands-helping text-primary"></i> Join Our Health Initiative:</h6>
+                    <p>Whether you're a healthcare professional, volunteer, or community member, your participation can make a significant difference in improving community health outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Development Modal -->
+<div class="modal fade" id="skillsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Skills Development and Training</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Our Skills Development program is designed to bridge the gap between potential and opportunity. We focus on practical, market-relevant skills that lead to economic empowerment and sustainable livelihoods.</p>
+                
+                <h6 class="mt-4 mb-3"><i class="fas fa-star text-primary"></i> Training Programs:</h6>
+                <ul class="program-list">
+                    <li><strong>Vocational Training:</strong> Hands-on training in high-demand trades and crafts.</li>
+                    <li><strong>Digital Skills:</strong> Computer literacy, programming, and digital marketing courses.</li>
+                    <li><strong>Financial Literacy:</strong> Money management, budgeting, and investment basics.</li>
+                    <li><strong>Entrepreneurship:</strong> Business planning, marketing, and startup guidance.</li>
+                    <li><strong>Professional Development:</strong> Workplace skills, communication, and leadership training.</li>
+                </ul>
+
+                <h6 class="mt-4 mb-3"><i class="fas fa-bullseye text-primary"></i> Program Benefits:</h6>
+                <ul class="program-list">
+                    <li>Increased employability</li>
+                    <li>Higher income potential</li>
+                    <li>Business creation opportunities</li>
+                    <li>Professional network development</li>
+                </ul>
+
+                <div class="get-involved mt-4 p-3 bg-light rounded">
+                    <h6><i class="fas fa-hands-helping text-primary"></i> Start Your Journey:</h6>
+                    <p>Transform your future with our skills development programs. Whether you're starting your career or looking to upgrade your skills, we have a program for you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Agriculture Modal -->
+<div class="modal fade" id="agricultureModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Agriculture Initiatives</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>ANSAD's Agriculture Initiative aims to revolutionize farming practices while ensuring food security and sustainable income for farming communities. We combine traditional wisdom with modern techniques to create lasting impact.</p>
+                
+                <h6 class="mt-4 mb-3"><i class="fas fa-star text-primary"></i> Key Programs:</h6>
+                <ul class="program-list">
+                    <li><strong>Modern Farming Techniques:</strong> Training in efficient and productive farming methods.</li>
+                    <li><strong>Sustainable Practices:</strong> Promoting eco-friendly and climate-smart agriculture.</li>
+                    <li><strong>Farm Management:</strong> Teaching business aspects of agriculture and resource optimization.</li>
+                    <li><strong>Market Access:</strong> Connecting farmers with markets and fair trade opportunities.</li>
+                    <li><strong>Technology Integration:</strong> Introducing modern agricultural technologies and innovations.</li>
+                </ul>
+
+                <h6 class="mt-4 mb-3"><i class="fas fa-bullseye text-primary"></i> Impact Areas:</h6>
+                <ul class="program-list">
+                    <li>Improved crop yields</li>
+                    <li>Sustainable farming practices</li>
+                    <li>Better market access</li>
+                    <li>Enhanced farmer incomes</li>
+                </ul>
+
+                <div class="get-involved mt-4 p-3 bg-light rounded">
+                    <h6><i class="fas fa-hands-helping text-primary"></i> Grow With Us:</h6>
+                    <p>Join our agricultural revolution and be part of creating sustainable food systems for future generations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mentorship Modal -->
+<div class="modal fade" id="mentorshipModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Mentorship Programs</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Our Mentorship Program creates powerful connections between experienced professionals and aspiring individuals, fostering personal and professional growth through guided development and support.</p>
+                
+                <h6 class="mt-4 mb-3"><i class="fas fa-star text-primary"></i> Program Components:</h6>
+                <ul class="program-list">
+                    <li><strong>Leadership Training:</strong> Developing
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Legal Aid Modal -->
+<div class="modal fade" id="legalModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Legal Aid and Support</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>ANSAD is committed to ensuring access to justice and legal support for all community members. Our legal aid program provides:</p>
+                <ul>
+                    <li>Free Legal Consultation</li>
+                    <li>Legal Rights Education</li>
+                    <li>Document Preparation Assistance</li>
+                    <li>Court Representation Support</li>
+                    <li>Legal Advocacy Services</li>
+                    <li>Community Legal Workshops</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<section class="cta-section text-center py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center; background-size: cover; color: white;">
+    <div class="cta-content">
+        <h2>Ready to Make a Difference?</h2>
+        <p class="mb-4">Join our programs and be part of the change</p>
+        <a href="/contact" class="btn btn-lg btn-primary">Contact Us</a>
+    </div>
+</section>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- jQuery for counter animation -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Counter Animation
+    $('.counter').each(function() {
+        var $this = $(this);
+        var countTo = $this.text();
+        
+        $({ countNum: 0 }).animate({
+            countNum: countTo
+        }, {
+            duration: 2000,
+            easing: 'linear',
+            step: function() {
+                $this.text(Math.floor(this.countNum) + "+");
+            },
+            complete: function() {
+                $this.text(this.countNum + "+");
+            }
+        });
+    });
+</script>
+
+<!-- Add Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+<%- include('../partials/footer') %>

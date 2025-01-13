@@ -1,0 +1,77 @@
+/* Hero Section */
+.events-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('/images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+/* Featured Event */
+.featured-event {
+    background: linear-gradient(90deg, #004D40, #FFB300); /* Gradient from #004D40 to #FFB300 */
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-event:hover {
+    transform: translateY(-5px);
+} 
+
+/* Event Cards */
+.event-card {
+    border: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-details {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 15px 0;
+}
+
+.event-details i {
+    color: #004d40;
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #ffb300;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 25px;
+}
+
+.btn-outline-primary {
+    color:  #004d40;
+    border-color: #ffb300;
+    border-radius: 25px;
+}
+
+.btn-outline-primary:hover {
+    background: #ffb300;
+    border-color: #004d40;
+}
+
+/* Badge */
+.badge {
+    padding: 8px 15px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .events-hero {
+        padding: 60px 0;
+    }
+} 

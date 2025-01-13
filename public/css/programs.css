@@ -1,0 +1,239 @@
+/* Main container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header section */
+.display-4 {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+/* Program Cards */
+.program-card {
+    padding: 2.5rem;
+    background: linear-gradient(90deg, #ffb300, #004d40);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #004d40, #ffb300);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-card:hover::before {
+    opacity: 1;
+}
+
+.program-icon {
+    margin-bottom: 1.5rem;
+    color: #004d40;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover .program-icon {
+    transform: scale(1.1);
+}
+
+.program-card h2 {
+    font-size: 1.75rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.program-card p {
+    color: #90e0e3;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Custom Button Styling */
+.btn-primary {
+    background: linear-gradient(90deg, #004d40, #ffd54f);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(68, 129, 235, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(68, 129, 235, 0.3);
+    background: linear-gradient(90deg, #004d40, #ffd54f);
+}
+
+.btn-outline-primary {
+    color: var(--primary-green); 
+    border-color: var(--primary-green);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-green); /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    border-color: var(--primary-gold); /* Change border color on hover */
+}
+
+/* Impact Stats Section */
+.impact-stat {
+    padding: 2.5rem;
+    background: linear-gradient(145deg, #ffb300, #004d40);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.impact-stat:hover {
+    transform: translateY(-5px);
+}
+
+.impact-stat h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.impact-stat p {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .program-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .impact-stat {
+        padding: 1.5rem;
+    }
+
+    .impact-stat h3 {
+        font-size: 2.5rem;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Accessibility */
+.btn-primary:focus,
+.program-card:focus {
+    outline: 3px solid #4481eb;
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .program-card,
+    .impact-stat {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .btn-primary {
+        border: 1px solid #4481eb;
+        background: none;
+        color: #4481eb;
+    }
+}
+
+/* Add these styles to your existing CSS */
+
+.hero-section {
+    margin-top: -2rem; /* Adjust based on your header height */
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.program-card {
+    position: relative;
+    z-index: 1;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.event-card {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.cta-section {
+    border-radius: 15px;
+    margin: 4rem 0;
+    padding: 6rem 0;
+}
+
+.cta-section h2,
+.cta-section p {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Image overlay effects */
+.featured-program img {
+    transition: transform 0.3s ease;
+}
+
+.featured-program:hover img {
+    transform: scale(1.05);
+}
+
+/* Ensure images don't break layout */
+img {
+    max-width: 100%;
+    height: auto;
+}
